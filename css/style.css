@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #444;
+    height: 100vh;
+    padding: 2rem;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right bottom , #eb984e, #ffff);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.welcome{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.logo{
+    height: 5.0rem;
+        /* width: 10%; */
+}
+
+.login{
+    display: flex;
+}
+
+.login__input{
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    font-family: inherit;
+    text-align: center;
+    width: 12rem;
+    border-radius: 10rem;
+    margin-right: 1rem;
+    color: inherit;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+
+}
+
+.login__input:focus{
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.login__input::placeholder{
+    color: #bbb;
+}
+
+.btn{
+    border: none;
+    background: none;
+    transition: all 0.3s;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.login__btn{
+    font-size: 2.2rem;
+    color: inherit;
+    cursor: pointer;
+}
+
+.login__btn:hover,
+.login__btn:focus
+{
+    outline:none;
+    color: #777;
+
+}
+
+.app{
+    padding: 9.6rem 0;
+    opacity: 0;
+}
+.container{
+    max-width: 124rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section--form{
+    
+    
+    row-gap: 5rem;
+    background-color: #e67e22;
+    box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 /15%);
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom , #eb984e,#e67e22);
+    /* box-shadow: #777; */
+    overflow: hidden;
+    padding:4rem;
+}
+.registration{
+    font-size: 2.5rem;
+}
+.detail{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.5rem;
+    row-gap: 3.3rem;
+    padding: 4rem ;
+}
+.detail label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+
+}
+
+.detail input, .detail select{
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fdf2e9;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px rgb(0 0 0 /10%);
+}
+
+.btn--form{
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.detail-img{
+    background-image: linear-gradient(to right bottom, rgb(235, 151, 78, 0.34),rgb(230, 125, 34,0.35)), url('../img/detailForm.jpg');
+    background-size: cover;
+    background-position: center;
+}

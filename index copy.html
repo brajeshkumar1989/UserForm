@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="icon" href="img/favicon.ico" />
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+        <link rel="menifest" href="menifest.webmanifest" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+        <title>Online Registration </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="nav">
+            <img src="img/logo.svg" class="logo" alt="logo" />
+            <p class="welcome">Login to check if already registered.</p>
+            <form class="login">
+                <input type="text" placeholder="userid" class="login__input login__input--user"/>
+                <input type="password" placeholder="password" class="login__input login__input--pin"/>
+                <button class="btn login__btn">&rarr;</button>
+            </form>
+        </nav>
+
+        <main class="app">
+            <div class="container">
+                <div class="section--form">
+
+                    <h2 class="registration">Welcome back! <span class="firstname">Brajesh</span>, please check your detail!</h2>
+                    <form class="detail" name="user-detail">
+                    
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input class="user--fullname" id="fullname" type="text" placeholder="your name" name="full-name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email address</label>
+                        <input class="user--email"  id="email" type="email" placeholder="me@example.com" name="email" required>
+                    </div>
+                    <div>
+                        <label for="address">Physical address</label>
+                        <input class="user--address"  id="physical-address" type="address" placeholder="detail address" name="user--address" required>
+                    </div>
+        
+                    <div>
+                        <label for="select-where">Where did you hear about us?</label>
+                        <select id="select-where" name="select-where" required>
+                            <option  value="">Please choose one option</option>
+                            <option class="knowfrom" value="friends">Friends & Family</option>
+                            <option class="knowfrom" value="youtube">YouTube Video</option>
+                            <option class="knowfrom" value="podcast">Podcast</option>
+                            <option class="knowfrom" value="ad">Facebook</option>
+                            <option class="knowfrom" value="github">GitHub</option>
+                        </select>
+                    </div>
+                    <button class="btn btn--form">sign-up now</button>
+                    
+                </form>
+            </div>
+            
+            <div  class="detail-img"  role="img" aria-label="img-side">
+                
+            </div>
+        </div>
+        </main>
+        <script src="js/script.js   " async defer></script>
+    </body>
+</html>
